@@ -9,14 +9,15 @@ var libro = {
     Titulo: "",
     Autor: "",
     NumeroDePaginas: 0,
-    cargarLibro: function() {
-        this.ISBN = prompt("Ingrese el ISBN del libro");
-        this.Titulo = prompt("Ingrese el título del libro");
-        this.Autor = prompt("Ingrese el autor del libro");
-        this.NumeroDePaginas = prompt("Ingrese el número de páginas del libro");
-    }
 }
 
-libro.cargarLibro();
+function cargarLibro() {
+    libro.ISBN = prompt("Ingrese el ISBN del libro");
+    libro.Titulo = prompt("Ingrese el título del libro");
+    libro.Autor = prompt("Ingrese el autor del libro");
+    libro.NumeroDePaginas = prompt("Ingrese el número de páginas del libro");
+}
+
+cargarLibro();
 
 console.log(libro);
